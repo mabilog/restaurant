@@ -1,0 +1,12 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mabilog/restaurant.git",
+  "author": "Mabilog <g.angelo.m@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
