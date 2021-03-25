@@ -183,7 +183,7 @@
     display: block;
     cursor: pointer;
   }
-
+    /* 3 bars f */
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
