@@ -119,8 +119,8 @@
     margin: 0;
     width: 100%;
     position: absolute;
-    /* top: -1000px;
-    opacity: 1; */
+    top: -1000px;
+    opacity: 1;
     transition: all 0.5s ease;
     height: 75vh;
     z-index: -1;
@@ -132,15 +132,16 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 50vh;
+    height: 80vh;
     font-size: 1.6rem;
   }
 
   #navbar__logo {
     padding-left: 50px;
+    z-index: 99;
   }
 
-  .navbar__toggle.bar {
+  .navbar__toggle .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
@@ -181,5 +182,15 @@
   .navbar__toggle .bar {
     display: block;
     cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
