@@ -74,4 +74,4 @@ function navbar() {
   content.append(navbar);
 }
 
-export default navbar;
+module.exports.navbar;

@@ -27,4 +27,4 @@ function hero() {
   content.appendChild(mainContainer);
 }
 
-export default hero;
+module.exports.hero;

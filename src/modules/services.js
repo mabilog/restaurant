@@ -34,4 +34,4 @@ function services() {
   content.append(services);
 }
 
-export default services;
+module.exports.services;

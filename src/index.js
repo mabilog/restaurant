@@ -1,7 +1,7 @@
-import footer from './modules/footer.js';
-import hero from './modules/hero.js';
-import navbar from './modules/navbar.js';
-import services from './modules/services.js';
+import { footer } from './modules/footer.js';
+import { hero } from './modules/hero.js';
+import { navbar } from './modules/navbar.js';
+import { services } from './modules/services.js';
 
 // const content = document.querySelector('#content');
 function menuToggle() {

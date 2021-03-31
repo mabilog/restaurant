@@ -90,4 +90,4 @@ function footer() {
   footerLinkWrapper.append(aboutItems, contactItems, videoItems, socialItems);
 
 }
-export default footer;
+module.exports.footer;
