@@ -2,6 +2,9 @@
   "name": "restaurant",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts" :{
+    "build": "webpack"
+  },
   "repository": "git@github.com:mabilog/restaurant.git",
   "author": "Mabilog <g.angelo.m@gmail.com>",
   "license": "MIT",
