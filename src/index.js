@@ -1,7 +1,7 @@
-import { navbar } from './navbar.js';
-import { hero } from './hero.js';
-import { services } from './services.js';
-import { footer } from './footer.js';
+import { navbar } from './modules/navbar.js';
+import { home } from './modules/home.js';
+import { services } from './modules/services.js';
+import { footer } from './modules/footer.js';
 
 const menu = document.querySelector('#mobile-menu');
 const menuLink = document.querySelector('.navbar__menu');
@@ -11,4 +11,11 @@ menu.addEventListener('click', function () {
   menuLink.classList.toggle('active');
 })
 
-console.log('hello?')
+
+const tabs = document.querySelectorAll('[data-tag-target]');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    target.classList.add('active');
+  })
+})

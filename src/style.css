@@ -16,6 +16,8 @@
   z-index: 999;
 }
 
+
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -66,6 +68,11 @@
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+}
+
+.navbar__links:hover{
+  text-decoration: #4836ff solid underline;
+  transition: none;
 }
 
 .navbar__btn {
@@ -353,7 +360,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .services h1 {

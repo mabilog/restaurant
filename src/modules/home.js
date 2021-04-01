@@ -1,8 +1,8 @@
-const hero = (() => {
+const home = (() => {
   const content = document.querySelector('#content');
-  const hero = document.createElement('div');
-  hero.setAttribute('class', 'main');
-  hero.innerHTML = `
+  const home = document.createElement('div');
+  home.setAttribute('class', 'main');
+  home.innerHTML = `
     <div class="main__container">
       <div class="main__content">
         <h1>NEXT GENERATION</h1>
@@ -16,7 +16,7 @@ const hero = (() => {
     </div>
   `;
 
-  content.appendChild(hero);
+  content.appendChild(home);
 })();
 
-export { hero };
+export { home };
