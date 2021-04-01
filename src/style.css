@@ -110,7 +110,7 @@
   color: #f77062;
   transition: all 0.3s ease;
 }
-
+ 
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
@@ -204,7 +204,15 @@
   }
 }
 
-/* Hero Section CSS */
+/* Home Section CSS */
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
 .main {
   background-color: #141414;
 }
@@ -223,7 +231,7 @@
   padding: 0 50px;
 }
 
-.main__content h1 {
+.main h2 {
   font-size: 4rem;
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -235,7 +243,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.main__content h2 {
+.main h3 {
   font-size: 4rem;
   background-color: #ff8177;
   background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
@@ -247,7 +255,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.main__content p {
+.main p {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
@@ -304,6 +312,10 @@
   width: 80%;
 }
 
+.menu_container{
+ color: white;
+}
+
 @media screen and (max-width: 768px) {
   .main__container {
     display: grid;
@@ -320,12 +332,12 @@
     margin-bottom: 4rem;
   }
 
-  .main__content h1 {
+  .main__content h2 {
     font-size: 2.5rem;
     margin-top: 2rem;
   }
 
-  .main__content h2 {
+  .main__content h3 {
     font-size: 3rem;
   }
 
@@ -336,12 +348,12 @@
 }
 
 @media screen and( max-width: 480px) {
-  .main__content h1 {
+  .main__content h2 {
     font-size: 2rem;
     margin-top: 3rem;
   }
 
-  .main__content h2 {
+  .main__content h3 {
     font-size: 2rem;
   }
 
