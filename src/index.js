@@ -13,6 +13,7 @@ menu.addEventListener('click', function () {
 
 
 const tabs = document.querySelectorAll('[data-tag-target]');
+const tabContent = document.querySelectorAll('[data-tab-content');
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget);

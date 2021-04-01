@@ -13,22 +13,22 @@ const navbar = (() => {
       </div>
       <ul class="navbar__menu">
         <li class="navbar__item" data-tag-target>
-          <a href="./" class="navbar__links">Home</a>
+          <p class="navbar__links">Home</p>
         </li>
         <li class="navbar__item" data-tag-target>
-          <a href="./menu.html" class="navbar__links">Menu</a>
+          <p class="navbar__links">Menu</p>
         </li>
         <li class="navbar__item" data-tag-target>
-          <a href="./" class="navbar__links">Chef</a>
+          <p class="navbar__links">Chef</a>
         </li>
         <li class="navbar__item" data-tag-target>
-          <a href="./" class="navbar__links">Reservation</a>
+          <p class="navbar__links">Reservation</p>
         </li>
         <li class="navbar__item" data-tag-target>
-          <a href="./" class="navbar__links">Location</a>
+          <p class="navbar__links">Location</p>
         </li>
         <li class="navbar__btn">
-          <a href="./" class="button">Sign Up</a>
+          <p class="button">Sign Up</p>
         </li>
       </ul>
     </div>
