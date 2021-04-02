@@ -12,19 +12,19 @@ const navbar = (() => {
         <span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__item" data-tab-target>
+        <li class="navbar__item">
           <p class="navbar__links tab" data-tab-target=".home">Home</p>
         </li>
-        <li class="navbar__item" data-tab-target>
+        <li class="navbar__item">
           <p class="navbar__links tab" data-tab-target=".menu">Menu</p>
         </li>
-        <li class="navbar__item" data-tab-target>
-          <p class="navbar__links tab" data-tab-target=".chef"> Chef</a>
+        <li class="navbar__item">
+          <p class="navbar__links tab" data-tab-target=".chef">Chef</a>
         </li>
-        <li class="navbar__item" data-tab-target>
+        <li class="navbar__item" >
           <p class="navbar__links tab" data-tab-target=".reservation">Reservation</p>
         </li>
-        <li class="navbar__item " data-tab-target>
+        <li class="navbar__item " >
           <p class="navbar__links tab" data-tab-target=".location">Location</p>
         </li>
         <li class="navbar__btn">
