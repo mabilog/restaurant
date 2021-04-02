@@ -1,5 +1,6 @@
 import { navbar } from './modules/navbar.js';
 import { home } from './modules/home.js';
+import { menu as food } from './modules/menu.js';
 import { services } from './modules/services.js';
 import { footer } from './modules/footer.js';
 
@@ -12,11 +13,25 @@ menu.addEventListener('click', function () {
 })
 
 
-const tabs = document.querySelectorAll('[data-tag-target]');
-const tabContent = document.querySelectorAll('[data-tab-content');
+const tabs = document.querySelectorAll('.navbar__item');
+const tabContents = document.querySelectorAll('[data-tab-content]');
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget);
-    target.classList.add('active');
+    // const target = tab.dataset.tabTarget;
+    // console.log(tab.classList);
+    // tabContents.forEach(tabContent => {
+    //   tabContent.classList.remove('active');
+    // })
+    // tab.classList.add('active');
+    // console.log(target);
+    // // console.log(target);
+
+    // // const target = document.querySelector(tab.dataset.tabTarget);
+    // // console.log(tab.classList);
+    // // tab.classList.add('test');
+    // // console.log(tab.classList);
+    // // console.log(tab.dataset.tabTarget)
+    console.log(tabContents)
+    console.log(tabContents.classList);
   })
 })

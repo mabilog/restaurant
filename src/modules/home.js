@@ -1,9 +1,10 @@
 const home = (() => {
   const content = document.querySelector('#content');
   const home = document.createElement('div');
-  home.setAttribute('class', 'main');
+  home.setAttribute('class', 'main active');
+  home.setAttribute('data-tab-content', '');
   home.innerHTML = `
-    <div class="main__container" data-tab-content >
+    <div class="main__container">
       <div class="main__content">
         <h2>NEXT GENERATION</h2>
         <h3>TECHNOLOGY</h3>
@@ -18,5 +19,4 @@ const home = (() => {
 
   content.appendChild(home);
 })();
-
 export { home };

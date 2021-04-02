@@ -12,20 +12,20 @@ const navbar = (() => {
         <span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__item navbar__links tab" data-tab-target="#home">
-          <p>Home</p>
+        <li class="navbar__item" data-tab-target>
+          <p class="navbar__links tab" data-tab-target=".home">Home</p>
         </li>
-        <li class="navbar__item navbar__links tab" data-tab-target="#menu">
-          <p  >Menu</p>
+        <li class="navbar__item" data-tab-target>
+          <p class="navbar__links tab" data-tab-target=".menu">Menu</p>
         </li>
-        <li class="navbar__item navbar__links tab" data-tab-target="#chef">
-          <p >Chef</a>
+        <li class="navbar__item" data-tab-target>
+          <p class="navbar__links tab" data-tab-target=".chef"> Chef</a>
         </li>
-        <li class="navbar__item navbar__links tab" data-tab-target="#reservation" >
-          <p>Reservation</p>
+        <li class="navbar__item" data-tab-target>
+          <p class="navbar__links tab" data-tab-target=".reservation">Reservation</p>
         </li>
-        <li class="navbar__item navbar__links tab" data-tab-target="#location">
-          <p >Location</p>
+        <li class="navbar__item " data-tab-target>
+          <p class="navbar__links tab" data-tab-target=".location">Location</p>
         </li>
         <li class="navbar__btn">
           <p class="button">Sign Up</p>

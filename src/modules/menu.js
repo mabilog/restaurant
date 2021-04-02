@@ -2,9 +2,11 @@ const menu = (() => {
   const content = document.querySelector("#content");
   const menu = document.createElement('div');
   menu.setAttribute('class', 'menu');
+  menu.setAttribute('id', "menu");
+  menu.setAttribute('data-tab-content', '');
   menu.innerHTML = ` 
   
-    <div class="main menu__container active" data-tab-content>
+    <div class="menu__container">
       <h2>Whats on the menu!</h2>
       <h3>Kazu</h3>
       <p>This is what we have on the menu</p>
@@ -14,7 +16,6 @@ const menu = (() => {
     </div>
 
   `;
-  console.log('boom boom');
   content.appendChild(menu);
 })();
 
