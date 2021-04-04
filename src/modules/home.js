@@ -1,22 +1,45 @@
 const home = (() => {
-  const content = document.querySelector('#content');
-  const home = document.createElement('div');
-  home.setAttribute('class', 'main active');
-  home.setAttribute('data-tab-content', '');
-  home.innerHTML = `
-    <div class="main__container">
-      <div class="main__content">
-        <h2>NEXT GENERATION</h2>
-        <h3>TECHNOLOGY</h3>
-        <p>See what makes us different</p>
-        <button class="main__btn"><a href="/index.html">Get Started</a></button>
-      </div>
-      <div class="main__img--container">
-        <img src="../images/pic1.svg" alt="messages" id="main__img">
-      </div>
-    </div>
-  `;
+  //home container
+  const homeContainer = document.createElement('div');
+  homeContainer.classList.add('home__container', 'tab', 'active');
 
-  content.appendChild(home);
+  //home content
+  const homeContent = document.createElement('div');
+  homeContent.classList.add('home__content');
+
+  //title
+  const title = document.createElement('h2');
+  title.innerHTML = `NEXT GENERATION`;
+
+  //description 
+  const desc = document.createElement('h3');
+  desc.innerHTML = `TECHNOLOGY`;
+
+  //paragraph
+  const para = document.createElement('p');
+  para.innerHTML = `See what makes us different`;
+
+  //button
+  const btn = document.createElement('button');
+  btn.classList.add('home__btn');
+
+  // Get Stared link to append into button
+  const link = document.createElement('a');
+  link.href = '/index.html';
+  link.innerHTML = `Get Started`;
+  btn.appendChild(link);
+
+  // home image container
+  const homeImg = document.createElement('home__img--container');
+  const img = document.createElement('img');
+  img.src = '../images/pic1.svg';
+  img.alt = 'message';
+  img.id = 'home__img';
+
+
+  homeContent.appendChild(title, desc, btn);
+  homeImg.appendChild(img);
+  homeContainer.appendChild(homeContent, homeImg);
 })();
+
 export { home };

@@ -377,16 +377,15 @@
 }
 
 /*  Services Section CSS */
-.services__container {
+.services {
   background: #141414;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 95vh;
+  height: 90vh;
 }
 
-.services__container h2 {
+.services h2 {
   background-color: #ff8177;
   background-image: linear-gradient(
     to right,
@@ -399,7 +398,6 @@
   );
   background-size: 100%;
   margin-bottom: 5rem;
-  /* padding-top: 3rem; */
   font-size: 2.5rem;
   background-clip: text;
   -webkit-background-clip: text;
@@ -408,7 +406,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.services__cards {
+.services__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -439,7 +437,7 @@
     url("../images/pic4.jpg");
 }
 
-.services__container h3 {
+.services h3 {
   position: absolute;
   top: 250px;
   left: 30px;
@@ -465,29 +463,29 @@
   cursor: pointer;
 }
 
-.services__card.serviceBtn:hover {
+.services__card:hover {
   transform: scale(1.075);
   transition: 0.2s ease-in;
   cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
-  .services__container {
+  .services {
     height: 1600px;
   }
 
-  .services__container h2 {
+  .services h2 {
     font-size: 2rem;
     margin-top: 12rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .services__container {
+  .services {
     height: 1400px;
   }
 
-  .services__container h2 {
+  .services h2 {
     font-size: 1.2rem;
   }
 
@@ -648,6 +646,6 @@
   display: grid;
 }
 
-.services__container.active {
+.services__container .active {
   display: flex;
 }
