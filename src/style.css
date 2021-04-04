@@ -4,6 +4,10 @@
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
 }
+
+#content {
+  background-color: #131313;
+}
 .navbar {
   background: #131313;
   height: 80px;
@@ -220,10 +224,6 @@
 }
 
 /* Home Section CSS */
-
-.home__container {
-  background-color: #141414;
-}
 
 .home__container {
   display: grid;
@@ -465,9 +465,10 @@
   cursor: pointer;
 }
 
-.services__card.serviceBtn:hover {
+.services__card .serviceBtn:hover {
   transform: scale(1.075);
   transition: 0.2s ease-in;
+  background: #4837ff;
   cursor: pointer;
 }
 
