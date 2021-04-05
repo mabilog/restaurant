@@ -5,11 +5,11 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
-#content {
+html {
   background-color: #131313;
 }
 .navbar {
-  background: #131313;
+  background: #fff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -45,12 +45,13 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 700;
 }
 
-.fa-gem {
-  margin-right: 0.5rem;
+#navbar__logo img {
+  height: 70px;
+  margin: 10px;
 }
-
 .navbar__menu {
   display: flex;
   align-items: center;
@@ -60,7 +61,7 @@
 
 .navbar__item {
   height: 80px;
-  color: white;
+  color: #131313;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +116,7 @@
   outline: none;
   border-radius: 4px;
   background: #f77062;
-  color: white;
+  color: #131313;
   transition: none;
   -webkit-transition: all 0.3s;
 }
@@ -152,15 +153,15 @@
     transition: all 0.5s ease;
     height: 75vh;
     z-index: -1;
-    background: #131313;
+    background: white;
   }
   .navbar__menu.active {
-    background: #131313;
+    background: white;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 80vh;
+    height: 25vh;
     font-size: 1.6rem;
   }
 
@@ -174,7 +175,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: white;
+    background: #131313;
   }
   .navbar__item {
     width: 100%;
@@ -383,7 +384,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 95vh;
+  height: 100vh;
+
 }
 
 .menu__container h2 {
@@ -424,7 +426,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("../images/pic3.jpg");
+    url("../images/kazu1_mini.jpg");
   background-size: cover;
   position: relative;
   color: white;
@@ -436,18 +438,18 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("../images/pic4.jpg");
+    url("../images/umeshu_mini.jpg");
 }
 
 .menu__container h3 {
   position: absolute;
-  top: 250px;
+  top: 150px;
   left: 30px;
 }
 
 .menu__card p {
   position: absolute;
-  top: 400px;
+  top: 250px;
   left: 30px;
 }
 
@@ -474,22 +476,30 @@
 
 @media screen and (max-width: 960px) {
   .menu__container {
-    height: 1600px;
+    height: 700px;
+    padding-top: 0;
+    margin-top:0;
   }
 
   .menu__container h2 {
     font-size: 2rem;
     margin-top: 12rem;
   }
+  .menu__container p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .menu__container {
-    height: 1400px;
+    height: 1200px;
+    margin-top: 0;
   }
 
   .menu__container h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    /* max-height: 2rem; */
   }
 
   .menu__card {
@@ -500,8 +510,8 @@
 
 /* Footer CSS */
 .footer__container {
-  background-color: #141414;
-  padding: 5rem 0;
+  background-color: #131313;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -509,7 +519,7 @@
 }
 
 #footer__logo {
-  color: white;
+  color: #131313;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -522,6 +532,7 @@
   max-width: 1000px;
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .footer__link--wrapper {
@@ -557,22 +568,25 @@
 /* Social Icons */
 
 .social__icon--link {
-  color: white;
+  color: #131313;
   font-size: 24px;
 }
 
 .social__media {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   width: 100%;
+  background-color: white;
 }
-
+.social__media img {
+  max-height: 50px;
+}
 .social__media--wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 40px auto;
 }
 
 .social__icons {

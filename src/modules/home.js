@@ -9,15 +9,15 @@ const home = (() => {
 
   //title
   const title = document.createElement('h2');
-  title.innerHTML = `NEXT GENERATION`;
+  title.innerHTML = `KAZU RESTAURANT`;
 
   //description 
   const desc = document.createElement('h3');
-  desc.innerHTML = `TECHNOLOGY`;
+  desc.innerHTML = `ORDER NOW`;
 
   //paragraph
   const para = document.createElement('p');
-  para.innerHTML = `See what makes us different`;
+  para.innerHTML = `Japanese Fusion`;
 
   //button
   const btn = document.createElement('button');

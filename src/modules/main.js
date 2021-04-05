@@ -20,22 +20,22 @@ const main = (() => {
 
 
   // home container
-  title.innerHTML = `NEXT GENERATION`;
-  desc.innerHTML = `TECHNOLOGY`;
-  para.innerHTML = `See what makes us different`;
+  title.innerHTML = `KAZU RESTAURANT`;
+  desc.innerHTML = `MONTREAL`;
+  para.innerHTML = `Japanese Fusion`;
 
   // Get Stared link to append into button
   link.href = '/index.html';
-  link.innerHTML = `Get Started`;
+  link.innerHTML = `Order Now`;
 
 
   // home image container
-  img.src = '../images/pic1.svg';
+  img.src = '../images/2_mini.jpeg';
   img.alt = 'message';
   img.id = 'home__img';
 
   btn.appendChild(link);
-  homeContent.append(title, desc, btn);
+  homeContent.append(title, desc, para, btn);
   homeImg.appendChild(img);
   homeContainer.append(homeContent, homeImg);
   content.appendChild(homeContainer);
@@ -80,9 +80,9 @@ const main = (() => {
   menuCardOne.classList.add('menu__card');
   cardOneBtn.classList.add('menuBtn');
 
-  cardOneTitle.innerHTML = `Experience Bliss`;
-  cardOnePara.innerHTML = `AI Powered Technology`;
-  cardOneBtn.innerHTML = `Get Started`;
+  cardOneTitle.innerHTML = `Tuna Salmon Salad Rice Bowl`;
+  cardOnePara.innerHTML = `Freshly chopped tuna and salmon mixed with salad on steamed Japanese rice`;
+  cardOneBtn.innerHTML = `Add to Cart`;
 
   menuCardOne.append(cardOneTitle, cardOnePara, cardOneBtn);
 
@@ -94,10 +94,10 @@ const main = (() => {
 
   menuCardTwo.classList.add('menu__card');
   // cardTwoBtn.classList.add('button');
-  cardTwoBtn.classList.add('serviceBtn');
-  cardTwoTitle.innerHTML = `Are you Ready?`;
-  cardTwoPara.innerHTML = `Take the leap`;
-  cardTwoBtn.innerHTML = `Get Started`;
+  cardTwoBtn.classList.add('menuBtn');
+  cardTwoTitle.innerHTML = `48 hours pork bowl`;
+  cardTwoPara.innerHTML = `A bowl of rice topped with sliced pork simmered in soy sauce in a mildly sweet sauce`;
+  cardTwoBtn.innerHTML = `Add to Cart`;
 
   menuCardTwo.append(cardTwoTitle, cardTwoPara, cardTwoBtn);
   menuCards.append(menuCardOne, menuCardTwo)

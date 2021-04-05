@@ -5,7 +5,7 @@ const navbar = (() => {
   nav.setAttribute("class", 'navbar');
   nav.innerHTML = `
     <div class="navbar__container">
-      <a href="./index.html" id="navbar__logo"><i class="fas fa-gem"></i> NEXT</a>
+      <a href="./index.html" id="navbar__logo"><img src='../images/kazu-logo.png'> Kazu</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
