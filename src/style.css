@@ -645,10 +645,19 @@
   display: none;
 }
 
+.location__container {
+  display: none;
+}
+
 .home__container.active {
   display: grid;
 }
-
+.menu__container.active {
+  display: block;
+}
 .services__container.active {
   display: flex;
+}
+.location__container.active {
+  display: block;
 }

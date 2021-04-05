@@ -16,7 +16,7 @@ const navbar = (() => {
         <li class="navbar__item navbar__links tab" data-tab-target=".menu__container">Menu</li>
         <li class="navbar__item navbar__links tab" data-tab-target=".services__container">Services</li>
         <li class="navbar__item navbar__links tab" data-tab-target="#reservation">Reservation</li>
-        <li class="navbar__item navbar__links tab" data-tab-target="#location">Location</li>
+        <li class="navbar__item navbar__links tab" data-tab-target=".location__container">Location</li>
         <li class="navbar__btn">
           <p class="button">Sign Up</p>
         </li>
