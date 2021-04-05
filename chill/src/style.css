@@ -4,6 +4,10 @@
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
 }
+
+#content {
+  background-color: #131313;
+}
 .navbar {
   background: #131313;
   height: 80px;
@@ -222,10 +226,6 @@
 /* Home Section CSS */
 
 .home__container {
-  background-color: #141414;
-}
-
-.home__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -377,15 +377,16 @@
 }
 
 /*  Services Section CSS */
-.services {
+.services__container {
   background: #141414;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  justify-content: center;
+  height: 95vh;
 }
 
-.services h2 {
+.services__container h2 {
   background-color: #ff8177;
   background-image: linear-gradient(
     to right,
@@ -398,6 +399,7 @@
   );
   background-size: 100%;
   margin-bottom: 5rem;
+  /* padding-top: 3rem; */
   font-size: 2.5rem;
   background-clip: text;
   -webkit-background-clip: text;
@@ -406,7 +408,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.services__container {
+.services__cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -437,7 +439,7 @@
     url("../images/pic4.jpg");
 }
 
-.services h3 {
+.services__container h3 {
   position: absolute;
   top: 250px;
   left: 30px;
@@ -463,29 +465,30 @@
   cursor: pointer;
 }
 
-.services__card:hover {
+.services__card .serviceBtn:hover {
   transform: scale(1.075);
   transition: 0.2s ease-in;
+  background: #4837ff;
   cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
-  .services {
+  .services__container {
     height: 1600px;
   }
 
-  .services h2 {
+  .services__container h2 {
     font-size: 2rem;
     margin-top: 12rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .services {
+  .services__container {
     height: 1400px;
   }
 
-  .services h2 {
+  .services__container h2 {
     font-size: 1.2rem;
   }
 
@@ -642,10 +645,19 @@
   display: none;
 }
 
+.location__container {
+  display: none;
+}
+
 .home__container.active {
   display: grid;
 }
-
-.services__container .active {
+.menu__container.active {
+  display: block;
+}
+.services__container.active {
   display: flex;
+}
+.location__container.active {
+  display: block;
 }

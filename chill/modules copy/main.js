@@ -1,9 +1,14 @@
-const home = (() => {
+import { menu } from './menu.js';
+import { services } from './services.js';
+
+
+const main = (() => {
   const content = document.querySelector('#content');
-  const home = document.createElement('div');
-  home.setAttribute('class', 'main active');
-  home.setAttribute('data-tab-content', '');
-  home.innerHTML = `
+  const main = document.createElement('div');
+  // home.setAttribute('class', 'main active');
+  main.classList.add('main', 'active');
+  // main.setAttribute('data-tab-content', '');
+  main.innerHTML = `
     <div class="main__container">
       <div class="main__content">
         <h2>NEXT GENERATION</h2>
@@ -17,6 +22,8 @@ const home = (() => {
     </div>
   `;
 
-  content.appendChild(home);
+
+
+  content.appendChild(main);
 })();
-export { home };
+export { main };

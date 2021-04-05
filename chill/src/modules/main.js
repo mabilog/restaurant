@@ -41,77 +41,77 @@ const main = (() => {
   content.appendChild(homeContainer);
 
   /***********************************************************************  MENU TAB ***********************************************************************/
-  // const menuContainer = document.createElement('div');
-  // const menuTitle = document.createElement('h2');
-  // const menuSubtitle = document.createElement('h3');
-  // const menuLogo = document.createElement('div');
-  // const menuImg = document.createElement('img');
+  const menuContainer = document.createElement('div');
+  const menuTitle = document.createElement('h2');
+  const menuSubtitle = document.createElement('h3');
+  const menuLogo = document.createElement('div');
+  const menuImg = document.createElement('img');
 
-  // menuContainer.classList.add('menu__container', 'thing');
-  // menuLogo.classList.add('kazu-logo');
+  menuContainer.classList.add('menu__container', 'thing');
+  menuLogo.classList.add('kazu-logo');
 
-  // menuTitle.innerHTM = `What's on the menu!`;
-  // menuSubtitle.innerHTML = `This is what's on the menu beech`;
+  menuTitle.innerHTM = `What's on the menu!`;
+  menuSubtitle.innerHTML = `This is what's on the menu beech`;
 
-  // menuImg.src = '../images/kazu-logo.png';
-  // menuImg.alt = `kazu-logo`;
-  // menuImg.id = 'kazu__img';
+  menuImg.src = '../images/kazu-logo.png';
+  menuImg.alt = `kazu-logo`;
+  menuImg.id = 'kazu__img';
 
-  // menuLogo.appendChild(menuImg);
-  // menuContainer.append(menuTitle, menuSubtitle, menuLogo);
-  // content.append(menuContainer);
+  menuLogo.appendChild(menuImg);
+  menuContainer.append(menuTitle, menuSubtitle, menuLogo);
+  content.append(menuContainer);
   /****************************************************************  SERVICES TAB ***********************************************************/
 
-  const menuContainer = document.createElement('div');
-  menuContainer.classList.add('menu__container', 'thing');
+  const servicesContainer = document.createElement('div');
+  servicesContainer.classList.add('services__container', 'thing');
 
-  const menuTitle = document.createElement('h2');
-  menuTitle.innerHTML = `Menu`;
+  const hype = document.createElement('h2');
+  hype.innerHTML = `See what the hype is about`;
 
-  const menuCards = document.createElement('div');
-  menuCards.classList.add('menu__cards');
+  const servicesCards = document.createElement('div');
+  servicesCards.classList.add('services__cards');
 
   // Card One
-  const menuCardOne = document.createElement('div');
+  const serviceCardOne = document.createElement('div');
   const cardOneTitle = document.createElement('h3');
   const cardOnePara = document.createElement('p');
   const cardOneBtn = document.createElement('button');
 
-  menuCardOne.classList.add('menu__card');
-  cardOneBtn.classList.add('menuBtn');
+  serviceCardOne.classList.add('services__card');
+  cardOneBtn.classList.add('serviceBtn');
 
   cardOneTitle.innerHTML = `Experience Bliss`;
   cardOnePara.innerHTML = `AI Powered Technology`;
   cardOneBtn.innerHTML = `Get Started`;
 
-  menuCardOne.append(cardOneTitle, cardOnePara, cardOneBtn);
+  serviceCardOne.append(cardOneTitle, cardOnePara, cardOneBtn);
 
   // Card Two
-  const menuCardTwo = document.createElement('div');
+  const serviceCardTwo = document.createElement('div');
   const cardTwoTitle = document.createElement('h3');
   const cardTwoPara = document.createElement('p');
   const cardTwoBtn = document.createElement('button');
 
-  menuCardTwo.classList.add('menu__card');
+  serviceCardTwo.classList.add('services__card');
   // cardTwoBtn.classList.add('button');
   cardTwoBtn.classList.add('serviceBtn');
   cardTwoTitle.innerHTML = `Are you Ready?`;
   cardTwoPara.innerHTML = `Take the leap`;
   cardTwoBtn.innerHTML = `Get Started`;
 
-  menuCardTwo.append(cardTwoTitle, cardTwoPara, cardTwoBtn);
-  menuCards.append(menuCardOne, menuCardTwo)
-  menuContainer.append(menuTitle, menuCards);
-  content.append(menuContainer);
+  serviceCardTwo.append(cardTwoTitle, cardTwoPara, cardTwoBtn);
+  servicesCards.append(serviceCardOne, serviceCardTwo)
+  servicesContainer.append(hype, servicesCards);
+  content.append(servicesContainer);
 
   /****************************************************************  LOCATIONS TAB ***********************************************************/
 
-  // const locationsContainer = document.createElement('div');
-  // locationsContainer.classList.add('location__container', 'thing');
-  // locationsContainer.innerHTML = `
-  // <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVRFgdmwayUwRxRf0DLTFlak&key=AIzaSyB6H8Pfp-Iq4mZ6c-4O9otg5f_NZcH5q38"></iframe>
-  // `;
-  // content.append(locationsContainer);
+  const locationsContainer = document.createElement('div');
+  locationsContainer.classList.add('location__container', 'thing');
+  locationsContainer.innerHTML = `
+  <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVRFgdmwayUwRxRf0DLTFlak&key=AIzaSyB6H8Pfp-Iq4mZ6c-4O9otg5f_NZcH5q38"></iframe>
+  `;
+  content.append(locationsContainer);
 
 
 })();

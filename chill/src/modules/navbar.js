@@ -14,6 +14,12 @@ const navbar = (() => {
       <ul class="navbar__menu">
         <li class="navbar__item navbar__links tab" data-tab-target=".home__container">Home</li>
         <li class="navbar__item navbar__links tab" data-tab-target=".menu__container">Menu</li>
+        <li class="navbar__item navbar__links tab" data-tab-target=".services__container">Services</li>
+        <li class="navbar__item navbar__links tab" data-tab-target="#reservation">Reservation</li>
+        <li class="navbar__item navbar__links tab" data-tab-target=".location__container">Location</li>
+        <li class="navbar__btn">
+          <p class="button">Sign Up</p>
+        </li>
       </ul>
     </div>
   `;
