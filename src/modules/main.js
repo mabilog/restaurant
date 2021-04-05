@@ -106,12 +106,6 @@ const main = (() => {
 
   /****************************************************************  LOCATIONS TAB ***********************************************************/
 
-  // const locationsContainer = document.createElement('div');
-  // locationsContainer.classList.add('location__container', 'thing');
-  // locationsContainer.innerHTML = `
-  // <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVRFgdmwayUwRxRf0DLTFlak&key=AIzaSyB6H8Pfp-Iq4mZ6c-4O9otg5f_NZcH5q38"></iframe>
-  // `;
-  // content.append(locationsContainer);
 
 
 })();
